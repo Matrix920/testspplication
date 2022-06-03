@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="welcome">Welcome to the app</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="update_information">Update information</string>
+    <string name="change_password">Change Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+    <string name="current_password">Current Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">Update</string>
+    <string name="delete_message">Are you sure you want to delete this account?</string>
+    <string name="yes_delete">Yes, delete</string>
+    <string name="no">No</string>
+    <string name="welcome_bottom">Designed &amp; Developed by </string>
+    <string name="ali_fouad">Ali Fouad</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.view.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <LinearLayout
+        android:paddingHorizontal="10dp"
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:text="Name"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingHorizontal="10dp"
+        android:id="@+id/llPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/llName">
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_phone"/>
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:text="+97157934857"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingHorizontal="10dp"
+        android:id="@+id/llEmail"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llPhone">
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_mail"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:text="Email"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdateInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llEmail"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:paddingVertical="15dp"
+        android:text="@string/update_information"
+        android:drawableEnd="@drawable/ic_arrow"/>
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateInformation"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:paddingVertical="15dp"
+        android:text="@string/change_password"
+        android:drawableEnd="@drawable/ic_arrow"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChangePassword"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:paddingVertical="15dp"
+        android:text="@string/delete_account"
+        android:drawableEnd="@drawable/ic_arrow"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDeleteAccount"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:paddingVertical="15dp"
+        android:text="@string/logout"
+        android:drawableEnd="@drawable/ic_arrow"/>
+</RelativeLayout>
